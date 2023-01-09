@@ -4,7 +4,7 @@ using Microsoft.Extensions.Hosting;
 
 using System;
 
-namespace MyApp // Note: actual namespace depends on the project name.
+namespace SampleConsole // Note: actual namespace depends on the project name.
 {
     internal class Program
     {
