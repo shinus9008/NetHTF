@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\NetHTF\NetHTF.csproj" />
+  </ItemGroup>
+
 </Project>
