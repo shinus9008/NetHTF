@@ -7,4 +7,13 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="ReactiveUI.Fody" Version="18.4.25" />
+    <PackageReference Include="ReactiveUI.WPF" Version="18.4.25" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\samples\Sample.Common\Sample.Common.csproj" />
+  </ItemGroup>
+
 </Project>

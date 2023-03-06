@@ -4,9 +4,36 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppDiagramEntity"
+        xmlns:c="clr-namespace:WpfAppDiagramEntity.Controls"
         mc:Ignorable="d"
+        d:DataContext="{d:DesignInstance local:MainViewModel}" 
+        
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
 
-    </Grid>
+    <ScrollViewer 
+        Name="DesignerScrollViewer"
+        Background="Transparent"
+        HorizontalScrollBarVisibility="Auto"
+        VerticalScrollBarVisibility="Auto">
+
+
+        <c:DesignerCanvas Background="Silver">
+            <c:DesignerItem 
+                Width="100"                   
+                Height="100"
+                Canvas.Top="100"
+                Canvas.Left="100">
+                <Ellipse Fill="Blue"/>
+            </c:DesignerItem>
+            <c:DesignerItem 
+                Width="100"                   
+                Height="100"
+                Canvas.Top="250"
+                Canvas.Left="100">
+                <Ellipse Fill="Red"/>
+            </c:DesignerItem>
+        </c:DesignerCanvas>
+
+    </ScrollViewer>
+
 </Window>
