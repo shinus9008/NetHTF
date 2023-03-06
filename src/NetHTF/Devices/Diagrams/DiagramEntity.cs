@@ -7,8 +7,9 @@
     {
         public DiagramEntity(string name)
         {
-            Name = name;
+            Name       = name;
             Components = new List<DiagramComponent>();
+            Connects   = new List<DiagramConnect>();
         }
 
         /// <summary>
@@ -21,5 +22,10 @@
         /// </summary>
         //TODO: Read only
         public List<DiagramComponent> Components { get; }
+
+        /// <summary>
+        /// Diagram connects
+        /// </summary>
+        public List<DiagramConnect> Connects { get; }
     }
 }
