@@ -1,4 +1,6 @@
-﻿namespace Shinus9008.NetHTF.Workspace.Testing
+﻿using Shinus9008.NetHTF.Workspace.Features;
+
+namespace Shinus9008.NetHTF.Workspace.Testing
 {
     /// <summary>
     /// Define a class that provide the mechanism to configure hardware test's pipeline
