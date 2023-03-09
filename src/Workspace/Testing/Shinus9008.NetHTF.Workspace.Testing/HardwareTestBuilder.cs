@@ -10,7 +10,7 @@ namespace Shinus9008.NetHTF.Workspace.Testing
         private readonly List<Func<HardwareTestDelegate, HardwareTestDelegate>> _components = new();
 
         /// <summary>
-        /// Initializes a new instance of <see cref="ApplicationBuilder"/>.
+        /// Initializes a new instance of <see cref="HardwareTestBuilder"/>.
         /// </summary>
         /// <param name="serviceProvider">The <see cref="IServiceProvider"/> for application services.</param>
         public HardwareTestBuilder(IServiceProvider serviceProvider) : this(serviceProvider, new FeatureCollection())
@@ -18,7 +18,7 @@ namespace Shinus9008.NetHTF.Workspace.Testing
         }
 
         /// <summary>
-        /// Initializes a new instance of <see cref="ApplicationBuilder"/>.
+        /// Initializes a new instance of <see cref="HardwareTestBuilder"/>.
         /// </summary>
         /// <param name="serviceProvider">The <see cref="IServiceProvider"/> for application services.</param>
         /// <param name="server">The server instance that hosts the application.</param>
@@ -112,6 +112,7 @@ namespace Shinus9008.NetHTF.Workspace.Testing
         {
             HardwareTestDelegate app = context =>
             {
+                //TODO: Если не использовать Run, то данная функуия будет вызвана! проврить логику работы!
                 return Task.CompletedTask;
             };
 
