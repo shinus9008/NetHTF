@@ -27,8 +27,8 @@ namespace Shinus9008.NetHTF.Workspace.Features
         /// <exception cref="System.ArgumentOutOfRangeException"><paramref name="initialCapacity"/> is less than 0</exception>
         public FeatureCollection(int initialCapacity)
         {
-
-            ArgumentOutOfRangeException.ThrowIfNegative(initialCapacity);
+            //TODO: Add ArgumentOutOfRangeException
+            //ArgumentOutOfRangeException.ThrowIfNegative(initialCapacity);
 
             _initialCapacity = initialCapacity;
         }
