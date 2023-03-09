@@ -41,6 +41,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.QuickStart1", "sampl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.QuickStart2", "samples\Sample.QuickStart2\Sample.QuickStart2.csproj", "{63430369-574B-461D-A33A-102BBD801F59}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Hardware", "Hardware", "{1C700125-B826-459E-AE88-8AD1306D18B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shinus9008.NetHTF.Workspace.Hardware.Abstractions", "src\Workspace\Hardware\Shinus9008.NetHTF.Workspace.Hardware.Abstractions\Shinus9008.NetHTF.Workspace.Hardware.Abstractions.csproj", "{8A0C9514-6899-4D0A-9E0E-466A00580EF9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +91,10 @@ Global
 		{63430369-574B-461D-A33A-102BBD801F59}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63430369-574B-461D-A33A-102BBD801F59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63430369-574B-461D-A33A-102BBD801F59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A0C9514-6899-4D0A-9E0E-466A00580EF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A0C9514-6899-4D0A-9E0E-466A00580EF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A0C9514-6899-4D0A-9E0E-466A00580EF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A0C9514-6899-4D0A-9E0E-466A00580EF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -108,6 +116,8 @@ Global
 		{4910BE0D-6E20-40F9-8B02-7BC681186CEE} = {21210381-59B4-4E82-B7BF-B01EF66F5769}
 		{3534073C-D838-462B-ABCD-4BC842DD1CCB} = {A38AB677-8B16-4382-8233-1528F3C37E92}
 		{63430369-574B-461D-A33A-102BBD801F59} = {A38AB677-8B16-4382-8233-1528F3C37E92}
+		{1C700125-B826-459E-AE88-8AD1306D18B9} = {9EA7DABB-E37B-4EA3-B816-0EBA105E14B8}
+		{8A0C9514-6899-4D0A-9E0E-466A00580EF9} = {1C700125-B826-459E-AE88-8AD1306D18B9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FEAC1A8E-04C7-4704-9EB6-3CB0041B789A}
