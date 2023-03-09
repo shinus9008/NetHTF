@@ -1,4 +1,4 @@
-﻿namespace Shinus9008.NetHTF.Workspace.Testing.Extensions
+﻿namespace Shinus9008.NetHTF.Workspace.Testing
 {
     /// <summary>
     /// Extension methods for adding middleware.
