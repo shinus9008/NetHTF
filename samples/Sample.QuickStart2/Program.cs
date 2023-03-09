@@ -11,21 +11,31 @@ var pipeBuilder = new HardwareTestBuilder(services.BuildServiceProvider());
 pipeBuilder
     .Use(async (contect, next) =>
     {
-        Console.WriteLine("Pipe:1 -->");
-        await Task.Delay(100);
-        await next(contect);
-        Console.WriteLine("Pipe:1 <--");
+        // catch all Exception in pipe.
+        try
+        {
+            await next(contect);
+        }
+        catch (Exception ex)
+        {
+            // write a message to the console
+            Console.WriteLine(ex.ToString());
+        }
     })
     .Use(async (contect, next) =>
     {
-        Console.WriteLine("Pipe:2 -->");
-        await Task.Delay(100);
-        await next(contect);
-        Console.WriteLine("Pipe:2 <--");
+        // TODO: Open File Log
+        try
+        {
+            await next(contect);
+        }
+        finally
+        {
+            // TODO: Close File Log
+        }
     })
     .Run(async (context) =>
     {
-        Console.WriteLine("End, go back");
         await Task.Delay(100);
     });
 
