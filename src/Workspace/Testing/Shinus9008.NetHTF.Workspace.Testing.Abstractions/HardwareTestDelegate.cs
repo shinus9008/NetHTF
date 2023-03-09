@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Shinus9008.NetHTF.Workspace.Testing
+﻿namespace Shinus9008.NetHTF.Workspace.Testing
 {
-    public class HardwareTestDelegate
-    {
-    }
+    public delegate Task HardwareTestDelegate(HardwareTestContext context);    
 }
