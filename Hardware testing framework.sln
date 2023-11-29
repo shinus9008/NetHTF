@@ -3,11 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetHTF.Testing.Core", "NetHTF.Testing.Core\NetHTF.Testing.Core.csproj", "{9318D789-4A61-4C51-88F9-1D31990F435A}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5DAF9862-2412-4528-B7CF-0A5F0EA68F4B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Testing", "Testing", "{34A27FB0-4081-439C-B02F-5E6D217B31D3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetHTF.Testing.Core", "src\Testing\NetHTF.Testing.Core\NetHTF.Testing.Core.csproj", "{74867FCA-FE2E-4F33-81BF-B1C2AFFD6DC1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{61D410B0-7F36-4D38-A7FE-A49D9404F26C}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{DF17B3F0-68E9-4A74-B6C2-0D72FEF53361}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickStart.ConsoleApp", "src\Samples\QuickStart.ConsoleApp\QuickStart.ConsoleApp.csproj", "{078BB88F-4F33-4313-B6EC-EF16F04E9435}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,17 +24,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9318D789-4A61-4C51-88F9-1D31990F435A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9318D789-4A61-4C51-88F9-1D31990F435A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9318D789-4A61-4C51-88F9-1D31990F435A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9318D789-4A61-4C51-88F9-1D31990F435A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74867FCA-FE2E-4F33-81BF-B1C2AFFD6DC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74867FCA-FE2E-4F33-81BF-B1C2AFFD6DC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74867FCA-FE2E-4F33-81BF-B1C2AFFD6DC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74867FCA-FE2E-4F33-81BF-B1C2AFFD6DC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{078BB88F-4F33-4313-B6EC-EF16F04E9435}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{078BB88F-4F33-4313-B6EC-EF16F04E9435}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{078BB88F-4F33-4313-B6EC-EF16F04E9435}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{078BB88F-4F33-4313-B6EC-EF16F04E9435}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{9318D789-4A61-4C51-88F9-1D31990F435A} = {34A27FB0-4081-439C-B02F-5E6D217B31D3}
 		{34A27FB0-4081-439C-B02F-5E6D217B31D3} = {5DAF9862-2412-4528-B7CF-0A5F0EA68F4B}
+		{74867FCA-FE2E-4F33-81BF-B1C2AFFD6DC1} = {34A27FB0-4081-439C-B02F-5E6D217B31D3}
+		{078BB88F-4F33-4313-B6EC-EF16F04E9435} = {DF17B3F0-68E9-4A74-B6C2-0D72FEF53361}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {30246772-3C7D-429C-85CA-DBE45A9E8700}
